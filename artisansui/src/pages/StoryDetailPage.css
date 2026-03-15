@@ -1,0 +1,30 @@
+.story-detail {
+  max-width: 750px;
+  margin: auto;
+  padding: 40px 20px;
+  line-height: 1.8;
+}
+
+.story-detail-title {
+  font-size: 34px;
+  margin-bottom: 18px;
+}
+
+/* smaller image */
+
+.story-detail-image {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+
+  border-radius: 10px;
+
+  margin-bottom: 25px;
+}
+
+/* readable text */
+
+.story-detail-text {
+  font-size: 17px;
+  color: #444;
+}

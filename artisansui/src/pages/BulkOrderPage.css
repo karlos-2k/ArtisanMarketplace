@@ -1,0 +1,61 @@
+.bulk-page{
+  padding:40px;
+  background:#fff7f0;
+}
+
+.bulk-title{
+  text-align:center;
+  font-size:32px;
+  margin-bottom:30px;
+}
+
+.bulk-form{
+  max-width:700px;
+  margin:auto;
+  background:white;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+.form-section{
+  margin-bottom:25px;
+}
+
+.form-section h3{
+  margin-bottom:12px;
+}
+
+.bulk-form input{
+  width:100%;
+  padding:10px;
+  margin-bottom:12px;
+  border:1px solid #ddd;
+  border-radius:6px;
+}
+
+.product-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:10px;
+}
+
+.product-row input{
+  width:90px;
+}
+
+.submit-btn{
+  width:100%;
+  padding:12px;
+  border:none;
+  background:#c2410c;
+  color:white;
+  font-size:16px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.submit-btn:hover{
+  background:#a73408;
+}

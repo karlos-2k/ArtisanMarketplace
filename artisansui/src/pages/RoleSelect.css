@@ -1,0 +1,95 @@
+/* PAGE WRAPPER */
+.role-wrapper {
+  min-height: 70vh;
+  background: linear-gradient(to right, #f7efe7, #f1e2d2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* HEADING */
+.role-wrapper h2 {
+  margin-bottom: 28px;
+  font-size: 36px; /* 🔼 increased */
+  font-weight: 700; /* 🔼 bolder */
+  letter-spacing: -0.4px;
+  color: #1f1f1f;
+}
+
+/* CARD CONTAINER */
+.role-cards {
+  display: flex;
+  gap: 26px; /* 🔼 slightly more breathing space */
+}
+
+/* ROLE CARD */
+.role-card {
+  background: white;
+  width: 350px; /* 🔼 wider */
+  padding: 28px; /* 🔼 more padding */
+  border-radius: 18px;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.role-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 28px 50px rgba(0, 0, 0, 0.16);
+}
+
+/* ICON */
+.icon {
+  width: 50px; /* 🔼 */
+  height: 50px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* ICON COLORS */
+.consumer {
+  background: #ffedd5;
+}
+
+.artisan {
+  background: #d1fae5;
+}
+
+/* CARD TEXT */
+.role-card h3 {
+  margin-bottom: 12px;
+  font-size: 24px; /* 🔼 increased */
+  font-weight: 600;
+  color: #222;
+}
+
+.role-card p {
+  color: #555;
+  margin-bottom: 24px;
+  font-size: 16px; /* 🔼 increased */
+  line-height: 1.6;
+}
+
+/* BUTTON */
+.role-card button {
+  background: linear-gradient(135deg, #d35400, #e67e22);
+  color: white;
+  border: none;
+  padding: 14px 22px; /* 🔼 */
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px; /* 🔼 */
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.role-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(211, 84, 0, 0.45);
+}

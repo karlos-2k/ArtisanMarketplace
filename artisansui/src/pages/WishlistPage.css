@@ -1,0 +1,156 @@
+.wishlist-container {
+  padding: 40px;
+  background: #fff7f0;
+  font-family: inherit; 
+}
+
+.wishlist-title {
+  text-align: center;
+  font-size: 26px;
+  padding: 10px 0;
+  font-family: 'playfair display', serif;
+}
+
+/* TABLE */
+
+.wishlist-table {
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.wishlist-header,
+.wishlist-row {
+  display: grid;
+  grid-template-columns: 40px 3fr 1fr 1.5fr 1fr 1fr;
+  align-items: center;
+}
+
+.wishlist-header {
+  background: #f1c573;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.wishlist-row {
+  padding: 18px;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s ease;
+}
+
+.wishlist-row:hover {
+  background: #fafafa;
+}
+
+/* PRODUCT */
+
+.wishlist-product {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.wishlist-product img {
+  width: 60px;
+  border-radius: 6px;
+}
+
+.wishlist-product h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.wishlist-product p {
+  margin: 0;
+  color: gray;
+  font-size: 13px;
+}
+
+/* REMOVE BUTTON */
+
+.remove-icon {
+  border: none;
+  background: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.remove-icon:hover {
+  color: #c2410c;
+}
+
+/* STOCK STATUS */
+
+.stock {
+  font-weight: 500;
+}
+
+.in-stock {
+  color: #1a7f37;
+}
+
+.out-stock {
+  color: #d93025;
+}
+
+/* ADD TO CART BUTTON */
+
+.add-cart-btn {
+  background: #c2410c;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-cart-btn:hover {
+  background: #a93508;
+}
+
+.add-cart-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* ACTION BUTTONS */
+
+.wishlist-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25px;
+}
+
+.wishlist-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.clear-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  text-decoration: underline;
+}
+
+.add-all-btn {
+  background: #c2410c;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.continue-btn {
+  padding: 10px 16px;
+  background: #c2410c;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}

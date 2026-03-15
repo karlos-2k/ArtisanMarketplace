@@ -1,0 +1,141 @@
+.cart-page{
+  padding:40px;
+  background:#f6f6f6;
+}
+
+.cart-container{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:30px;
+}
+
+.cart-table{
+  background:white;
+  padding:20px;
+  border-radius:8px;
+}
+
+.table-head{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr 60px;
+  background:hsl(17, 88%, 60%);
+  padding:12px;
+  font-weight:600;
+}
+
+.cart-row{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr 60px;
+  align-items:center;
+  padding:15px 0;
+  border-bottom:1px solid #eee;
+}
+
+.product{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.product img{
+  width:60px;
+}
+
+.qty{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.qty button{
+  width:30px;
+  height:30px;
+}
+
+.order-summary{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+}
+
+.summary-row{
+  display:flex;
+  justify-content:space-between;
+  margin:10px 0;
+}
+
+.cart-summary-total{
+  display:flex;
+  justify-content:space-between;
+  font-weight:600;
+  font-size:18px;
+}
+
+.checkout-btn{
+  width:100%;
+  margin-top:15px;
+  padding:12px;
+  background:#C2410C;
+  color:white;
+  border:none;
+  border-radius:25px;
+}
+
+.delete-box{
+  display:flex;
+  justify-content:center;
+}
+
+.cart-delete-btn{
+  width:36px;
+  height:36px;
+  background:#b71926;
+  border:none;
+  border-radius:6px;
+  color:white;
+  cursor:pointer;
+  font-size:16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.cart-delete-btn:hover{
+  background:#d62839;
+}
+
+.empty-cart{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  min-height:60vh;
+  gap:16px;
+}
+
+.empty-cart img{
+  width:180px;
+  max-width:100%;
+  height:auto;
+}
+
+.empty-cart h2{
+  font-size:22px;
+  margin:0;
+}
+
+.empty-cart p{
+  color:#777;
+  font-size:14px;
+}
+
+.continue-btn{
+  margin-top:10px;
+  padding:10px 18px;
+  background:#1b8a5a;
+  color:white;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}

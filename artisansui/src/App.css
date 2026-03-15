@@ -1,0 +1,36 @@
+/* ===============================
+   ROOT VARIABLES
+================================ */
+:root {
+  --header-height: 168px; /* EXACT visual height of your header */
+}
+
+/* ===============================
+   APP LAYOUT
+================================ */
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+/* ===============================
+   HEADER SPACER (CRITICAL)
+================================ */
+.header-spacer {
+  height: var(--header-height);
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/* ===============================
+   PAGE CONTENT
+================================ */
+.page-content {
+  flex: 1;
+  width: 100%;
+  background: #fff7f2;
+}

@@ -1,0 +1,184 @@
+.checkout-page{
+padding:0px 40px;
+background:#FFF4EC;
+min-height:60vh;
+font-family:Inter,sans-serif;
+}
+
+.checkout-title{
+font-size:30px;
+font-weight:700;
+margin-bottom:30px;
+}
+
+/* LAYOUT */
+
+.checkout-layout{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:18px;
+}
+
+/* CARDS */
+
+.checkout-card{
+background:white;
+border-radius:14px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 4px 12px rgba(0,0,0,0.06);
+}
+
+.section-title{
+margin-bottom:15px;
+}
+
+/* ADDRESS FORM */
+
+.address-form{
+display:flex;
+flex-direction:column;
+gap:14px;
+}
+
+.address-form input,
+.address-form textarea{
+padding:12px 14px;
+border:1px solid #e5e7eb;
+border-radius:8px;
+font-size:14px;
+outline:none;
+}
+
+.address-form textarea{
+min-height:80px;
+resize:none;
+}
+
+.address-row{
+display:flex;
+gap:12px;
+}
+
+.address-row input{
+flex:1;
+}
+
+/* PAYMENT METHODS */
+
+.payment-methods{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.payment-option{
+flex:1;
+border:1px solid #eee;
+border-radius:10px;
+padding:15px;
+cursor:pointer;
+transition:0.2s;
+display:flex;
+align-items:center;
+font-size:14px;
+}
+
+.payment-option:hover{
+border-color:#fb641b;
+background:#fffaf7;
+}
+
+.payment-option input{
+margin-right:10px;
+}
+
+/* SUMMARY */
+
+.summary-card{
+background:white;
+padding:25px;
+border-radius:14px;
+box-shadow:0 4px 12px rgba(0,0,0,0.06);
+position:sticky;
+top:20px;
+}
+
+.summary-row{
+display:flex;
+justify-content:space-between;
+margin:12px 0;
+font-size:14px;
+color:#444;
+}
+
+.divider{
+height:1px;
+background:#eee;
+margin:15px 0;
+}
+
+.summary-total{
+display:flex;
+justify-content:space-between;
+font-size:18px;
+font-weight:700;
+margin-bottom:20px;
+background:#e8f8ee;
+padding:12px 15px;
+border-radius:8px;
+color:#16a34a;
+}
+
+/* PAYMENT BUTTON */
+
+.payment-btn{
+width:100%;
+padding:14px;
+border:none;
+border-radius:10px;
+background:linear-gradient(90deg,#C2410C,#fb641b);
+color:white;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+.payment-btn:hover{
+transform:translateY(-2px);
+box-shadow:0 6px 14px rgba(0,0,0,0.15);
+}
+
+.secure-text{
+text-align:center;
+font-size:13px;
+color:#777;
+margin-top:10px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.checkout-page{
+padding:25px;
+}
+
+.checkout-layout{
+grid-template-columns:1fr;
+}
+
+.summary-card{
+position:relative;
+}
+
+.address-row{
+flex-direction:column;
+}
+
+.payment-methods{
+flex-direction:column;
+}
+
+}

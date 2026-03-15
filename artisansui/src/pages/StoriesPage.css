@@ -1,0 +1,159 @@
+.stories-page {
+  padding: 40px 60px;
+  background: #fff7f0;
+}
+
+/* GRID */
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+/* CARD */
+
+.story-card{
+position:relative;
+background:white;
+border-radius:18px;
+overflow:hidden;
+padding-bottom:180px;
+transition:0.25s;
+}
+
+.story-card:hover{
+transform:translateY(-6px);
+box-shadow:0 12px 24px rgba(0,0,0,0.12);
+}
+
+/* IMAGE */
+
+.story-image-wrapper {
+  width: 100%;
+  height: 220px;
+}
+
+.story-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* DESCRIPTION BOX */
+
+.story-content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15px;
+  width: calc(100% - 40px);
+  min-height: 200px; 
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.footer {
+  width: 100%;
+  padding: 40px 5%;
+  background: #f4f4f4;
+}
+
+/* TEXT */
+
+.story-title{
+font-size:18px;
+font-weight:600;
+
+display:-webkit-box;
+-webkit-line-clamp:1;
+-webkit-box-orient:vertical;
+overflow:hidden;
+}
+
+.story-date {
+  font-size: 13px;
+  color: gray;
+}
+
+.story-divider {
+  width: 50px;
+  height: 3px;
+  background: #c2410c;
+  margin: 10px 0;
+}
+
+.story-excerpt{
+font-size:14px;
+color:#555;
+
+display:-webkit-box;
+-webkit-line-clamp:2;
+-webkit-box-orient:vertical;
+overflow:hidden;
+}
+
+.read-more {
+  border: none;
+  background: none;
+  color: #c2410c;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.load-more-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.load-more-btn {
+  padding: 12px 22px;
+  background: #c2410c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.load-more-btn:hover {
+  background: #a93407;
+}
+
+/* TABLET */
+
+@media (max-width:900px){
+
+.stories-page{
+padding:35px 30px;
+}
+
+.story-image-wrapper{
+height:200px;
+}
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .stories-page {
+    padding: 30px 16px;
+  }
+
+  .stories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-image-wrapper {
+    height: 180px;
+  }
+
+
+}

@@ -1,0 +1,167 @@
+:root {
+  --primary: #c2410c;
+  --secondary: #1f2937;
+  --bg-soft: #fff3ea;
+  --text-muted: #6b7280;
+}
+
+/* Wrapper */
+.working-wrapper {
+  background: linear-gradient(135deg, #ffffff, var(--bg-soft));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Content */
+.content {
+  text-align: center;
+  max-width: 640px;
+  width: 100%;
+}
+
+/* Hammer */
+.hammer {
+  font-size: 3rem;
+  animation: hammer 1.5s infinite ease-in-out;
+  display: inline-block;
+}
+
+@keyframes hammer {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Title */
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--secondary);
+  margin: 1rem 0;
+}
+
+h1 span {
+  color: var(--primary);
+}
+
+/* Description */
+.desc {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Dots */
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.dots span {
+  width: 8px;
+  height: 8px;
+  background: var(--primary);
+  border-radius: 50%;
+  animation: pulse 1.4s infinite ease-in-out both;
+}
+
+.dots span:nth-child(1) {
+  animation-delay: 0s;
+}
+.dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes pulse {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+/* Status */
+.status {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: var(--primary);
+}
+
+/* Progress */
+.progress {
+  height: 6px;
+  background: #e5efe0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1.5rem 0 2rem;
+}
+
+.progress span {
+  display: block;
+  height: 100%;
+  width: 40%;
+  background: var(--primary);
+  animation: load 2s infinite ease-in-out;
+}
+
+@keyframes load {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(250%);
+  }
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.actions button {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+
+.primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.primary:hover {
+  opacity: 0.9;
+}
+
+/* Footer text */
+.footer-text {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}

@@ -1,0 +1,42 @@
+.sidebar {
+  background: white;
+  border-radius: 10px;
+  padding: 22px;
+  border: 1px solid #eee;
+  height: fit-content;
+}
+
+.sidebar h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  margin-bottom: 25px;
+}
+
+.filter-group h4 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+/* Checkbox */
+
+.filter-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+}
+
+.filter-group input {
+  margin-right: 8px;
+}
+
+/* Price slider */
+
+.filter-group input[type="range"] {
+  width: 100%;
+  margin-top: 8px;
+}

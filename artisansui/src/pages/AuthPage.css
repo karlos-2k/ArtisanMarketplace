@@ -1,0 +1,139 @@
+/* BACKGROUND */
+.auth-bg {
+  min-height: calc(100vh - 180px); /* header + footer safe */
+  background: linear-gradient(
+      rgba(255, 244, 236, 0.7),
+      rgba(255, 244, 236, 0.7)
+    ),
+    url("https://images.unsplash.com/photo-1524758631624-e2822e304c36");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+/* GLASS CARD */
+.glass-card {
+  width: 900px;
+  max-width: 100%;
+  display: flex;
+  border-radius: 20px;
+  backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+/* LEFT PANEL */
+.glass-left {
+  width: 45%;
+  padding: 48px;
+  color: #2b2b2b;
+  background: rgba(255, 255, 255, 0.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.glass-left h2 {
+  font-size: 34px;
+  margin-bottom: 12px;
+  color: #c2410c;
+}
+
+.glass-left p {
+  font-size: 18px;
+  opacity: 0.85;
+}
+
+/* RIGHT PANEL */
+.glass-right {
+  width: 55%;
+  padding: 48px;
+}
+
+/* TABS */
+.auth-tabs {
+  display: flex;
+  margin-bottom: 22px;
+}
+
+.auth-tabs button {
+  flex: 1;
+  padding: 12px;
+  background: none;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #555;
+  border-bottom: 2px solid transparent;
+}
+
+.auth-tabs .active {
+  color: #c2410c;
+  border-bottom: 2px solid #c2410c;
+}
+
+/* INPUTS */
+.glass-right input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: 1px solid #e5dcd5;
+  background: #fff;
+  color: #222;
+}
+
+/* SUBMIT */
+.submit-glass {
+  width: 100%;
+  padding: 13px;
+  margin-top: 6px;
+  border-radius: 10px;
+  border: none;
+  background: #c2410c;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* DIVIDER */
+.divider {
+  text-align: center;
+  margin: 16px 0;
+  font-size: 14px;
+  color: #888;
+}
+
+/* GOOGLE */
+.google-glass {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* ERROR */
+.error {
+  color: #c0392b;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .glass-card {
+    flex-direction: column;
+  }
+  .glass-left,
+  .glass-right {
+    width: 100%;
+  }
+}
