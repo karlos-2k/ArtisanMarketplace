@@ -1,7 +1,7 @@
 .order-page{
 background:#fff7f2;
 min-height:100vh;
-padding:20px 20px;
+padding:20px;
 font-family:Inter,sans-serif;
 }
 
@@ -11,24 +11,20 @@ margin:auto;
 }
 
 /* HEADER */
-
 .page-header{
 text-align:center;
-margin-bottom:20px;
+margin-bottom:25px;
 }
 
 .page-header h1{
 font-size:30px;
-margin-bottom:1px;
 }
 
 .page-header p{
 color:#777;
-font-size:14px;
 }
 
 /* ORDER HEADER */
-
 .order-header{
 display:flex;
 justify-content:space-between;
@@ -46,7 +42,6 @@ cursor:pointer;
 }
 
 /* META */
-
 .order-meta{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
@@ -72,7 +67,6 @@ color:#22c55e;
 }
 
 /* TRACKER */
-
 .tracker{
 background:white;
 padding:25px;
@@ -80,14 +74,34 @@ border-radius:10px;
 margin-bottom:30px;
 }
 
-.steps{
+.tracking-container{
+position:relative;
 display:flex;
 justify-content:space-between;
-margin-top:25px;
+margin-top:30px;
 }
 
-.step{
+.tracking-line{
+position:absolute;
+top:18px;
+left:40px;
+right:40px;
+height:3px;
+background:#eee;
+}
+
+.tracking-progress{
+position:absolute;
+top:18px;
+left:40px;
+height:3px;
+background:#c2410c;
+transition:0.4s;
+}
+
+.tracking-step{
 text-align:center;
+z-index:2;
 }
 
 .circle{
@@ -99,6 +113,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 margin:auto;
+background:white;
 }
 
 .circle.done{
@@ -107,104 +122,72 @@ color:white;
 border:none;
 }
 
-/* TABLE */
-
-.order-table{
-background:white;
-padding:20px;
-border-radius:10px;
-margin-bottom:30px;
+.tracking-step p{
+margin-top:10px;
+font-size:14px;
+color:#999;
 }
 
-
-table{
-width:100%;
-border-collapse:collapse;
-}
-
-th{
-text-align:left;
-font-size:13px;
-color:#888;
-border-bottom:1px solid #eee;
-padding-bottom:10px;
-}
-
-td{
-padding:15px 0;
-border-bottom:1px solid #f3f3f3;
-}
-
-.product-cell{
-display:flex;
-gap:14px;
-align-items:center;
-}
-
-.product-cell img{
-width:60px;
-height:60px;
-border-radius:8px;
-cursor:zoom-in;
-}
-
-.product-name{
+.tracking-step p.active{
+color:#c2410c;
 font-weight:600;
 }
 
-.product-id{
+/* ITEMS */
+.items{
+margin-bottom:30px;
+}
+
+.item-card{
+display:flex;
+align-items:center;
+gap:15px;
+background:white;
+padding:15px;
+border-radius:10px;
+margin-top:10px;
+}
+
+.item-card img{
+width:70px;
+height:70px;
+border-radius:10px;
+object-fit:cover;
+}
+
+.item-info{
+flex:1;
+}
+
+.name{
+font-weight:600;
+}
+
+.id{
 font-size:12px;
 color:#888;
 }
 
-/* RATING */
-
-.star{
-cursor:pointer;
-color:#ccc;
+.meta{
+font-size:13px;
+color:#666;
 }
 
-.star.active{
-color:#f59e0b;
-}
-
-/* SIZE */
-
-.size{
-background:#f1f1f1;
-padding:6px 12px;
-border-radius:6px;
+.item-price{
 font-weight:600;
+color:#c2410c;
 }
 
-/* QTY */
-
-.qty{
-display:flex;
-align-items:center;
-gap:10px;
-}
-
-.qty button{
-background:none;
-border:none;
-font-size:18px;
-cursor:pointer;
-}
-
-/* PRICE */
-
-.price{
-color:#C2410C;
-font-size:20px;
-font-weight:400;
-text-align:right;
-position:relative;
-top:-5px;
+/* SHIPPING */
+.shipping-box{
+background:white;
+padding:20px;
+border-radius:10px;
+margin-bottom:30px;
+line-height:1.8;
 }
 
 /* SUMMARY */
-
 .summary{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
@@ -220,171 +203,89 @@ justify-content:space-between;
 }
 
 .summary-box.total{
-background:#111;
+background:#C2410C;
 color:white;
 }
 
-/* TOAST */
-
-.toast{
-position:fixed;
-top:20px;
-right:20px;
-background:#111;
-color:white;
-padding:10px 18px;
-border-radius:6px;
-}
-
-/* MODAL */
-
-.modal{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.8);
-display:flex;
-align-items:center;
-justify-content:center;
-}
-
-.modal img{
-max-width:80%;
-border-radius:10px;
-}
-
-/* RESPONSIVE */
-
-@media(max-width:768px){
-
-.steps{
-flex-direction:column;
-gap:20px;
-}
-
-.product-cell{
-flex-direction:column;
-align-items:flex-start;
-}
-
-}
-
-/* TRACKING LINE */
-
-.tracking-container{
-position:relative;
-display:flex;
-justify-content:space-between;
-align-items:flex-start;
+/* SUPPORT */
+.support{
+text-align:center;
 margin-top:30px;
 }
 
-.tracking-line{
-position:absolute;
-top:18px;
-left:40px;
-right:40px;
-height:3px;
-background:#eee;
-z-index:0;
+.support-btn{
+background:#C2410C;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:8px;
+cursor:pointer;
 }
 
-.tracking-step{
-text-align:center;
+@media(max-width:768px){
+
+/* ✅ FORCE vertical layout */
+.tracking-container{
+display:block !important;
 position:relative;
-z-index:2;
-flex:0;
+padding-left:50px;
 }
 
+/* ❌ COMPLETELY REMOVE DESKTOP LINES */
+.tracking-line{
+display:none !important;
+}
+
+.tracking-progress{
+display:none !important;
+}
+
+/* ✅ BASE vertical line */
+.tracking-container::before{
+content:"";
+position:absolute;
+left:34px;
+top:0;
+bottom:0;
+width:3px;
+background:#eee;
+}
+
+/* ✅ PROGRESS vertical line */
+.tracking-container::after{
+content:"";
+position:absolute;
+left:34px;
+top:0;
+width:3px;
+height:var(--progress-height);
+background:#c2410c;
+transition:0.4s;
+}
+
+/* steps */
+.tracking-step{
+position:relative;
+margin-bottom:30px;
+}
+
+/* circle aligned */
+.circle{
+position:absolute;
+left:-32px;
+top:0;
+margin:0;
+}
+
+/* text */
 .tracking-step p{
+margin:0;
 font-size:14px;
-margin-top:10px;
-color:#999;
-font-weight:500;
-}
-
-.tracking-step p.active{
-color:#c2410c;
-font-weight:600;
 }
 
 .tracking-step span{
 font-size:12px;
-color:#bbb;
-}
-
-.circle{
-width:36px;
-height:36px;
-border-radius:50%;
-border:2px solid #ddd;
-display:flex;
-align-items:center;
-justify-content:center;
-margin:auto;
-background:white;
 color:#999;
-font-weight:600;
 }
 
-.circle.done{
-background:#c2410c;
-border:none;
-color:white;
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-.tracking-container{
-flex-direction:column;
-align-items:flex-start;
-gap:30px;
-position:relative;
-padding-left:30px;
-}
-
-.tracking-line{
-display:none;
-}
-
-.tracking-step{
-display:flex;
-align-items:center;
-gap:15px;
-text-align:left;
-}
-
-.circle{
-margin:0;
-}
-
-}
-
-/* base gray line */
-
-.tracking-line{
-position:absolute;
-top:18px;
-left:40px;
-right:40px;
-height:3px;
-background:#eee;
-z-index:0;
-}
-
-/* completed progress line */
-
-.tracking-progress{
-position:absolute;
-top:18px;
-left:40px;
-width:45%;
-height:3px;
-background:#c2410c;
-z-index:1;
-transition:0.4s;
 }

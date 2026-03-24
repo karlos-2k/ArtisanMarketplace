@@ -53,7 +53,7 @@ const OrderSuccessModal: React.FC<Props> = ({
           </div>
         </div>
 
-        <button className="continue-btn" onClick={onClose}>
+        <button className="order-continue-btn" onClick={onClose}>
           Continue Shopping
         </button>
       </div>
