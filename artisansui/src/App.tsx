@@ -17,9 +17,7 @@ import StoryDetailPage from "./pages/StoryDetailPage";
 import BulkOrderPage from "./pages/BulkOrderPage";
 
 /* SELLER */
-import SellerLayout from "./pages/seller/SellerLayout";
-import SellerDashboard from "./pages/seller/SellerDashboard";
-import SellerProducts from "./pages/seller/SellerProducts";
+
 import CartPage from "./pages/CartPage";
 import WishlistPage from "./pages/WishlistPage";
 import { CartProvider } from "./context/CartContext";
@@ -30,6 +28,8 @@ import OrderTrackingPage from "./pages/OrderTrackingPage";
 import AdminPanel from "./pages/AdminPanel";
 import AboutUs from "./pages/AboutUs";
 import CheckoutPage from "./pages/CheckoutPage";
+import SellerDashboard from './pages/seller/SellerDashboard';
+import AdminLogin from "./pages/AdminLogin";
 
 const App: React.FC = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -54,8 +54,10 @@ const App: React.FC = () => {
             <Route path="/bulk-order" element={<BulkOrderPage />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/checkout" element={<CheckoutPage />} />
+            <Route path="seller/dashboard" element={<SellerDashboard />} />
             {/* ================= ADMIN ================= */}
             <Route path="/admin" element={<AdminPanel />} />
+            <Route path="/admin/login" element={<AdminLogin />} />
             {/* ================= AUTH ================= */}
             <Route
               path="/role"
@@ -78,15 +80,15 @@ const App: React.FC = () => {
               path="/seller"
               element={
                 <PrivateRoute>
-                  <SellerLayout />
+                  <SellerDashboard />
                 </PrivateRoute>
               }
             >
               {/* Default seller landing page */}
-              <Route index element={<SellerDashboard />} />
+              {/* <Route index element={<SellerDashboard />} /> */}
 
               {/* Seller product management */}
-              <Route path="products" element={<SellerProducts />} />
+              {/* <Route path="seller/dashboard" element={<SellerDashboard />} /> */}
             </Route>
             {/* FALLBACK */}
             <Route path="*" element={<NotFound />} />
